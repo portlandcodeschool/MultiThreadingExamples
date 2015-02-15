@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		84180C8C1A909D7600252AF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84180C8B1A909D7600252AF1 /* main.m */; };
 		84180C8F1A909D7600252AF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84180C8E1A909D7600252AF1 /* AppDelegate.m */; };
-		84180C921A909D7600252AF1 /* MultiThreadingExamples.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84180C901A909D7600252AF1 /* MultiThreadingExamples.xcdatamodeld */; };
 		84180C951A909D7600252AF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84180C941A909D7600252AF1 /* ViewController.m */; };
 		84180C981A909D7600252AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84180C961A909D7600252AF1 /* Main.storyboard */; };
 		84180C9A1A909D7600252AF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84180C991A909D7600252AF1 /* Images.xcassets */; };
 		84180C9D1A909D7600252AF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84180C9B1A909D7600252AF1 /* LaunchScreen.xib */; };
 		84180CA91A909D7600252AF1 /* MultiThreadingExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84180CA81A909D7600252AF1 /* MultiThreadingExamplesTests.m */; };
+		84180CB41A90A65700252AF1 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84180CB31A90A65700252AF1 /* TestOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +33,6 @@
 		84180C8B1A909D7600252AF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84180C8D1A909D7600252AF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84180C8E1A909D7600252AF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84180C911A909D7600252AF1 /* MultiThreadingExamples.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MultiThreadingExamples.xcdatamodel; sourceTree = "<group>"; };
 		84180C931A909D7600252AF1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		84180C941A909D7600252AF1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		84180C971A909D7600252AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +41,8 @@
 		84180CA21A909D7600252AF1 /* MultiThreadingExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiThreadingExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84180CA71A909D7600252AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84180CA81A909D7600252AF1 /* MultiThreadingExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiThreadingExamplesTests.m; sourceTree = "<group>"; };
+		84180CB21A90A65700252AF1 /* TestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOperation.h; sourceTree = "<group>"; };
+		84180CB31A90A65700252AF1 /* TestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +91,9 @@
 				84180C961A909D7600252AF1 /* Main.storyboard */,
 				84180C991A909D7600252AF1 /* Images.xcassets */,
 				84180C9B1A909D7600252AF1 /* LaunchScreen.xib */,
-				84180C901A909D7600252AF1 /* MultiThreadingExamples.xcdatamodeld */,
 				84180C891A909D7600252AF1 /* Supporting Files */,
+				84180CB21A90A65700252AF1 /* TestOperation.h */,
+				84180CB31A90A65700252AF1 /* TestOperation.m */,
 			);
 			path = MultiThreadingExamples;
 			sourceTree = "<group>";
@@ -222,10 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84180C921A909D7600252AF1 /* MultiThreadingExamples.xcdatamodeld in Sources */,
 				84180C8F1A909D7600252AF1 /* AppDelegate.m in Sources */,
 				84180C951A909D7600252AF1 /* ViewController.m in Sources */,
 				84180C8C1A909D7600252AF1 /* main.m in Sources */,
+				84180CB41A90A65700252AF1 /* TestOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +418,7 @@
 				84180CAE1A909D7600252AF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84180CAF1A909D7600252AF1 /* Build configuration list for PBXNativeTarget "MultiThreadingExamplesTests" */ = {
 			isa = XCConfigurationList;
@@ -424,21 +427,9 @@
 				84180CB11A909D7600252AF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		84180C901A909D7600252AF1 /* MultiThreadingExamples.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				84180C911A909D7600252AF1 /* MultiThreadingExamples.xcdatamodel */,
-			);
-			currentVersion = 84180C911A909D7600252AF1 /* MultiThreadingExamples.xcdatamodel */;
-			path = MultiThreadingExamples.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 84180C7E1A909D7500252AF1 /* Project object */;
 }

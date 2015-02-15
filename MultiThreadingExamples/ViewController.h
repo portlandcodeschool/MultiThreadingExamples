@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TestOperation.h"
 
-@interface ViewController : UIViewController
+//Make sure we inport our testoperation.h so we can see its delegate protocol
+@interface ViewController : UIViewController <TestOperationDelegate>
+
+//Reference to our UILable on the main storyboard
+@property (weak, nonatomic) IBOutlet UILabel *theLabel;
 
 
 @end
